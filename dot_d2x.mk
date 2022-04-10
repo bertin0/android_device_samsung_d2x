@@ -31,6 +31,7 @@ $(call inherit-product, device/samsung/d2x/device.mk)
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
 ## Inherit some common stuff.mk
 $(call inherit-product, vendor/dot/config/common.mk)
