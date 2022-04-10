@@ -32,14 +32,14 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common stuff.mk
+$(call inherit-product, vendor/dot/config/common.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_d2x
+PRODUCT_NAME := dot_d2x
 PRODUCT_DEVICE := d2x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N976B
